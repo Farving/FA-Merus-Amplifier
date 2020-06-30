@@ -1,0 +1,803 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP_Small C?
+U 1 1 5EAF33C3
+P 9750 1250
+F 0 "C?" H 9838 1296 50  0000 L CNN
+F 1 "470u" H 9838 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 9750 1250 50  0001 C CNN
+F 3 "~" H 9750 1250 50  0001 C CNN
+	1    9750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5EAF41A5
+P 9750 1750
+F 0 "C?" H 9838 1796 50  0000 L CNN
+F 1 "470u" H 9838 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 9750 1750 50  0001 C CNN
+F 3 "~" H 9750 1750 50  0001 C CNN
+	1    9750 1750
+	1    0    0    -1  
+$EndComp
+Text HLabel 4100 1000 0    50   Input ~ 0
+PVDD
+Text HLabel 4100 1150 0    50   Input ~ 0
+VDD
+Text HLabel 2000 2600 0    50   Input ~ 0
+ENABLE
+Text HLabel 2000 2700 0    50   Input ~ 0
+MUTE
+Text HLabel 2000 2800 0    50   Output ~ 0
+CLIP
+Text HLabel 2000 2900 0    50   Output ~ 0
+ERROR
+Text HLabel 2000 3000 0    50   Input ~ 0
+I2C_SCL
+Text HLabel 2000 3100 0    50   BiDi ~ 0
+I2C_SDA
+Text HLabel 1850 3550 0    50   Input ~ 0
+I2S_SDA
+Text HLabel 1850 3650 0    50   Input ~ 0
+I2S_BCLK
+Text HLabel 1850 3750 0    50   Input ~ 0
+I2S_LRCLK
+Text HLabel 10700 3500 2    50   Output ~ 0
+OUT0A
+Text HLabel 10700 3650 2    50   Output ~ 0
+OUT0B
+Text HLabel 10700 3800 2    50   Output ~ 0
+OUT1A
+Text HLabel 10700 3950 2    50   Output ~ 0
+OUT1B
+$Comp
+L Device:C_Small C?
+U 1 1 5EB30F8A
+P 9000 3650
+F 0 "C?" H 9092 3696 50  0000 L CNN
+F 1 "10u" H 9092 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 3650 50  0001 C CNN
+F 3 "~" H 9000 3650 50  0001 C CNN
+	1    9000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB31257
+P 9100 1750
+F 0 "C?" H 9192 1796 50  0000 L CNN
+F 1 "100n" H 9192 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9100 1750 50  0001 C CNN
+F 3 "~" H 9100 1750 50  0001 C CNN
+	1    9100 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB31878
+P 9450 1750
+F 0 "C?" H 9542 1796 50  0000 L CNN
+F 1 "1u" H 9542 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9450 1750 50  0001 C CNN
+F 3 "~" H 9450 1750 50  0001 C CNN
+	1    9450 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB31D82
+P 10000 4000
+F 0 "C?" H 10092 4046 50  0000 L CNN
+F 1 "1n" H 10092 3955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10000 4000 50  0001 C CNN
+F 3 "~" H 10000 4000 50  0001 C CNN
+	1    10000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB32257
+P 2500 2100
+F 0 "R?" H 2559 2146 50  0000 L CNN
+F 1 "100R" H 2559 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2500 2100 50  0001 C CNN
+F 3 "~" H 2500 2100 50  0001 C CNN
+	1    2500 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EB32662
+P 2500 2400
+F 0 "D?" V 2546 2332 50  0000 R CNN
+F 1 "Red" V 2455 2332 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 2500 2400 50  0001 C CNN
+F 3 "~" V 2500 2400 50  0001 C CNN
+	1    2500 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB33083
+P 3000 3400
+F 0 "R?" H 3059 3446 50  0000 L CNN
+F 1 "0R" H 3059 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 3400 50  0001 C CNN
+F 3 "~" H 3000 3400 50  0001 C CNN
+	1    3000 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB33CE3
+P 9450 1250
+F 0 "C?" H 9542 1296 50  0000 L CNN
+F 1 "1u" H 9542 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9450 1250 50  0001 C CNN
+F 3 "~" H 9450 1250 50  0001 C CNN
+	1    9450 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB34229
+P 9100 1250
+F 0 "C?" H 9192 1296 50  0000 L CNN
+F 1 "100n" H 9192 1205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9100 1250 50  0001 C CNN
+F 3 "~" H 9100 1250 50  0001 C CNN
+	1    9100 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB3490C
+P 7250 2200
+F 0 "C?" V 7021 2200 50  0000 C CNN
+F 1 "100n" V 7112 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7250 2200 50  0001 C CNN
+F 3 "~" H 7250 2200 50  0001 C CNN
+	1    7250 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB34BD9
+P 7250 1850
+F 0 "C?" V 7021 1850 50  0000 C CNN
+F 1 "1u" V 7112 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7250 1850 50  0001 C CNN
+F 3 "~" H 7250 1850 50  0001 C CNN
+	1    7250 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB36062
+P 6650 2200
+F 0 "C?" V 6421 2200 50  0000 C CNN
+F 1 "100n" V 6512 2200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6650 2200 50  0001 C CNN
+F 3 "~" H 6650 2200 50  0001 C CNN
+	1    6650 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB36068
+P 6650 1850
+F 0 "C?" V 6421 1850 50  0000 C CNN
+F 1 "1u" V 6512 1850 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6650 1850 50  0001 C CNN
+F 3 "~" H 6650 1850 50  0001 C CNN
+	1    6650 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB36092
+P 7650 2650
+F 0 "C?" V 7421 2650 50  0000 C CNN
+F 1 "1u" V 7512 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7650 2650 50  0001 C CNN
+F 3 "~" H 7650 2650 50  0001 C CNN
+	1    7650 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB368E5
+P 7250 2650
+F 0 "C?" V 7021 2650 50  0000 C CNN
+F 1 "1u" V 7112 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7250 2650 50  0001 C CNN
+F 3 "~" H 7250 2650 50  0001 C CNN
+	1    7250 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB36BCD
+P 6650 2650
+F 0 "C?" V 6421 2650 50  0000 C CNN
+F 1 "1u" V 6512 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6650 2650 50  0001 C CNN
+F 3 "~" H 6650 2650 50  0001 C CNN
+	1    6650 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB36ED8
+P 6200 2650
+F 0 "C?" V 5971 2650 50  0000 C CNN
+F 1 "100n" V 6062 2650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6200 2650 50  0001 C CNN
+F 3 "~" H 6200 2650 50  0001 C CNN
+	1    6200 2650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB3728E
+P 5750 2300
+F 0 "C?" H 5658 2254 50  0000 R CNN
+F 1 "1u" H 5658 2345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5750 2300 50  0001 C CNN
+F 3 "~" H 5750 2300 50  0001 C CNN
+	1    5750 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB376B1
+P 5450 2300
+F 0 "C?" H 5358 2254 50  0000 R CNN
+F 1 "1u" H 5358 2345 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 2300 50  0001 C CNN
+F 3 "~" H 5450 2300 50  0001 C CNN
+	1    5450 2300
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB378BD
+P 5450 1850
+F 0 "C?" H 5358 1804 50  0000 R CNN
+F 1 "1u" H 5358 1895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5450 1850 50  0001 C CNN
+F 3 "~" H 5450 1850 50  0001 C CNN
+	1    5450 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB37ADD
+P 5000 1850
+F 0 "C?" H 4908 1804 50  0000 R CNN
+F 1 "1u" H 4908 1895 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5000 1850 50  0001 C CNN
+F 3 "~" H 5000 1850 50  0001 C CNN
+	1    5000 1850
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB37EFE
+P 4950 2350
+F 0 "C?" H 4858 2304 50  0000 R CNN
+F 1 "1u" H 4858 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4950 2350 50  0001 C CNN
+F 3 "~" H 4950 2350 50  0001 C CNN
+	1    4950 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB38307
+P 4500 2350
+F 0 "C?" H 4408 2304 50  0000 R CNN
+F 1 "1u" H 4408 2395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4500 2350 50  0001 C CNN
+F 3 "~" H 4500 2350 50  0001 C CNN
+	1    4500 2350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB40170
+P 9300 3650
+F 0 "C?" H 9392 3696 50  0000 L CNN
+F 1 "10u" H 9392 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9300 3650 50  0001 C CNN
+F 3 "~" H 9300 3650 50  0001 C CNN
+	1    9300 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB4074E
+P 9000 3250
+F 0 "C?" H 9092 3296 50  0000 L CNN
+F 1 "10u" H 9092 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 3250 50  0001 C CNN
+F 3 "~" H 9000 3250 50  0001 C CNN
+	1    9000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB40754
+P 9300 3250
+F 0 "C?" H 9392 3296 50  0000 L CNN
+F 1 "10u" H 9392 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9300 3250 50  0001 C CNN
+F 3 "~" H 9300 3250 50  0001 C CNN
+	1    9300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB40D9A
+P 9000 4050
+F 0 "C?" H 9092 4096 50  0000 L CNN
+F 1 "10u" H 9092 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4050 50  0001 C CNN
+F 3 "~" H 9000 4050 50  0001 C CNN
+	1    9000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB40DA0
+P 9300 4050
+F 0 "C?" H 9392 4096 50  0000 L CNN
+F 1 "10u" H 9392 4005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9300 4050 50  0001 C CNN
+F 3 "~" H 9300 4050 50  0001 C CNN
+	1    9300 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB41290
+P 9000 4450
+F 0 "C?" H 9092 4496 50  0000 L CNN
+F 1 "10u" H 9092 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9000 4450 50  0001 C CNN
+F 3 "~" H 9000 4450 50  0001 C CNN
+	1    9000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB41296
+P 9300 4450
+F 0 "C?" H 9392 4496 50  0000 L CNN
+F 1 "10u" H 9392 4405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9300 4450 50  0001 C CNN
+F 3 "~" H 9300 4450 50  0001 C CNN
+	1    9300 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB412C0
+P 10000 4300
+F 0 "C?" H 10092 4346 50  0000 L CNN
+F 1 "1n" H 10092 4255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10000 4300 50  0001 C CNN
+F 3 "~" H 10000 4300 50  0001 C CNN
+	1    10000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB42108
+P 10000 3300
+F 0 "C?" H 10092 3346 50  0000 L CNN
+F 1 "1n" H 10092 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10000 3300 50  0001 C CNN
+F 3 "~" H 10000 3300 50  0001 C CNN
+	1    10000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5EB4210E
+P 10000 3600
+F 0 "C?" H 10092 3646 50  0000 L CNN
+F 1 "1n" H 10092 3555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10000 3600 50  0001 C CNN
+F 3 "~" H 10000 3600 50  0001 C CNN
+	1    10000 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB4347B
+P 2800 2100
+F 0 "R?" H 2859 2146 50  0000 L CNN
+F 1 "100R" H 2859 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2800 2100 50  0001 C CNN
+F 3 "~" H 2800 2100 50  0001 C CNN
+	1    2800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EB43481
+P 2800 2400
+F 0 "D?" V 2846 2332 50  0000 R CNN
+F 1 "Yellow" V 2755 2332 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 2800 2400 50  0001 C CNN
+F 3 "~" V 2800 2400 50  0001 C CNN
+	1    2800 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB43887
+P 3100 2100
+F 0 "R?" H 3159 2146 50  0000 L CNN
+F 1 "100R" H 3159 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3100 2100 50  0001 C CNN
+F 3 "~" H 3100 2100 50  0001 C CNN
+	1    3100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EB4388D
+P 3100 2400
+F 0 "D?" V 3146 2332 50  0000 R CNN
+F 1 "Yellow" V 3055 2332 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3100 2400 50  0001 C CNN
+F 3 "~" V 3100 2400 50  0001 C CNN
+	1    3100 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB43C93
+P 3400 2100
+F 0 "R?" H 3459 2146 50  0000 L CNN
+F 1 "100R" H 3459 2055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3400 2100 50  0001 C CNN
+F 3 "~" H 3400 2100 50  0001 C CNN
+	1    3400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5EB43C99
+P 3400 2400
+F 0 "D?" V 3446 2332 50  0000 R CNN
+F 1 "Green" V 3355 2332 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 3400 2400 50  0001 C CNN
+F 3 "~" V 3400 2400 50  0001 C CNN
+	1    3400 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2000 2600 3400 2600
+Wire Wire Line
+	3400 2600 3400 2500
+Wire Wire Line
+	3400 2200 3400 2300
+Wire Wire Line
+	3100 2200 3100 2300
+Wire Wire Line
+	2800 2200 2800 2300
+Wire Wire Line
+	2500 2200 2500 2300
+Wire Wire Line
+	2000 2700 3100 2700
+Wire Wire Line
+	3100 2700 3100 2500
+Wire Wire Line
+	2000 2800 2800 2800
+Wire Wire Line
+	2800 2800 2800 2500
+Wire Wire Line
+	2000 2900 2500 2900
+Wire Wire Line
+	2500 2900 2500 2500
+Wire Wire Line
+	2500 2000 2500 1950
+Wire Wire Line
+	2500 1950 2800 1950
+Wire Wire Line
+	3400 1950 3400 2000
+Wire Wire Line
+	3100 2000 3100 1950
+Connection ~ 3100 1950
+Wire Wire Line
+	3100 1950 3400 1950
+Wire Wire Line
+	2800 2000 2800 1950
+Connection ~ 2800 1950
+Wire Wire Line
+	2800 1950 3100 1950
+Text Label 2850 1950 0    50   ~ 0
+DVDD
+Wire Wire Line
+	3500 2900 2500 2900
+Connection ~ 2500 2900
+Wire Wire Line
+	3500 2800 2800 2800
+Connection ~ 2800 2800
+Wire Wire Line
+	3500 2700 3100 2700
+Connection ~ 3100 2700
+Wire Wire Line
+	3400 2600 3500 2600
+Connection ~ 3400 2600
+$Comp
+L Device:R_Small R?
+U 1 1 5EB499A8
+P 3200 3000
+F 0 "R?" V 3150 2850 50  0000 C CNN
+F 1 "100R" V 3150 3200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3200 3000 50  0001 C CNN
+F 3 "~" H 3200 3000 50  0001 C CNN
+	1    3200 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB4A179
+P 3200 3100
+F 0 "R?" V 3150 2950 50  0000 C CNN
+F 1 "100R" V 3150 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3200 3100 50  0001 C CNN
+F 3 "~" H 3200 3100 50  0001 C CNN
+	1    3200 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 3000 3100 3000
+Wire Wire Line
+	3100 3100 2000 3100
+Wire Wire Line
+	3500 3000 3300 3000
+Wire Wire Line
+	3500 3100 3300 3100
+$Comp
+L Device:R_Small R?
+U 1 1 5EB4D683
+P 2750 3400
+F 0 "R?" H 2809 3446 50  0000 L CNN
+F 1 "0R" H 2809 3355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 3400 50  0001 C CNN
+F 3 "~" H 2750 3400 50  0001 C CNN
+	1    2750 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3550 2750 3550
+Wire Wire Line
+	2750 3550 2750 3500
+Wire Wire Line
+	3500 3600 3000 3600
+Wire Wire Line
+	3000 3600 3000 3500
+$Comp
+L Device:R_Small R?
+U 1 1 5EB4E681
+P 3000 3750
+F 0 "R?" H 3059 3796 50  0000 L CNN
+F 1 "0R" H 3059 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 3750 50  0001 C CNN
+F 3 "~" H 3000 3750 50  0001 C CNN
+	1    3000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB4EC72
+P 2750 3750
+F 0 "R?" H 2809 3796 50  0000 L CNN
+F 1 "0R" H 2809 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 3750 50  0001 C CNN
+F 3 "~" H 2750 3750 50  0001 C CNN
+	1    2750 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3650 2750 3550
+Connection ~ 2750 3550
+Wire Wire Line
+	3000 3650 3000 3600
+Connection ~ 3000 3600
+Wire Wire Line
+	2750 3850 2750 3900
+Wire Wire Line
+	2750 3900 2900 3900
+Wire Wire Line
+	3000 3900 3000 3850
+Wire Wire Line
+	3000 3300 3000 3250
+Wire Wire Line
+	3000 3250 2750 3250
+Wire Wire Line
+	2750 3250 2750 3300
+Text Label 2800 3250 0    50   ~ 0
+DVDD
+$Comp
+L power:GND #PWR?
+U 1 1 5EB511D8
+P 2900 3900
+F 0 "#PWR?" H 2900 3650 50  0001 C CNN
+F 1 "GND" H 2905 3727 50  0000 C CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 "" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 3900
+Wire Wire Line
+	2900 3900 3000 3900
+$Comp
+L Device:R_Small R?
+U 1 1 5EB5332E
+P 3000 4650
+F 0 "R?" H 3059 4696 50  0000 L CNN
+F 1 "0R" H 3059 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 4650 50  0001 C CNN
+F 3 "~" H 3000 4650 50  0001 C CNN
+	1    3000 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB53334
+P 2750 4650
+F 0 "R?" H 2809 4696 50  0000 L CNN
+F 1 "0R" H 2809 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 4650 50  0001 C CNN
+F 3 "~" H 2750 4650 50  0001 C CNN
+	1    2750 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4800 2750 4800
+Wire Wire Line
+	2750 4800 2750 4750
+Wire Wire Line
+	3500 4850 3000 4850
+Wire Wire Line
+	3000 4850 3000 4750
+$Comp
+L Device:R_Small R?
+U 1 1 5EB5333E
+P 3000 5050
+F 0 "R?" H 3059 5096 50  0000 L CNN
+F 1 "0R" H 3059 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3000 5050 50  0001 C CNN
+F 3 "~" H 3000 5050 50  0001 C CNN
+	1    3000 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB53344
+P 2750 5050
+F 0 "R?" H 2809 5096 50  0000 L CNN
+F 1 "0R" H 2809 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 2750 5050 50  0001 C CNN
+F 3 "~" H 2750 5050 50  0001 C CNN
+	1    2750 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 5150 2750 5200
+Wire Wire Line
+	2750 5200 2900 5200
+Wire Wire Line
+	3000 5200 3000 5150
+Wire Wire Line
+	3000 4550 3000 4500
+Wire Wire Line
+	3000 4500 2750 4500
+Wire Wire Line
+	2750 4500 2750 4550
+Text Label 2900 4500 0    50   ~ 0
+DVDD
+$Comp
+L power:GND #PWR?
+U 1 1 5EB53355
+P 3000 5200
+F 0 "#PWR?" H 3000 4950 50  0001 C CNN
+F 1 "GND" H 3005 5027 50  0000 C CNN
+F 2 "" H 3000 5200 50  0001 C CNN
+F 3 "" H 3000 5200 50  0001 C CNN
+	1    3000 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 5200
+Wire Wire Line
+	2900 5200 3000 5200
+Wire Wire Line
+	3000 4850 3000 4950
+Connection ~ 3000 4850
+Wire Wire Line
+	2750 4800 2750 4950
+Connection ~ 2750 4800
+$Comp
+L Device:R_Small R?
+U 1 1 5EB56CF1
+P 3250 5050
+F 0 "R?" H 3309 5096 50  0000 L CNN
+F 1 "0R" H 3309 5005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3250 5050 50  0001 C CNN
+F 3 "~" H 3250 5050 50  0001 C CNN
+	1    3250 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5EB57286
+P 3250 4650
+F 0 "R?" H 3309 4696 50  0000 L CNN
+F 1 "0R" H 3309 4605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H 3250 4650 50  0001 C CNN
+F 3 "~" H 3250 4650 50  0001 C CNN
+	1    3250 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 4900 3250 4900
+Wire Wire Line
+	3250 4900 3250 4950
+Wire Wire Line
+	3250 4900 3250 4750
+Connection ~ 3250 4900
+Wire Wire Line
+	3250 4550 3250 4500
+Wire Wire Line
+	3250 4500 3000 4500
+Connection ~ 3000 4500
+Wire Wire Line
+	3250 5150 3250 5200
+Wire Wire Line
+	3250 5200 3000 5200
+Connection ~ 3000 5200
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5EB5CF91
+P 5250 1100
+F 0 "FB?" V 5013 1100 50  0000 C CNN
+F 1 "600R" V 5104 1100 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 5180 1100 50  0001 C CNN
+F 3 "~" H 5250 1100 50  0001 C CNN
+	1    5250 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Ferrite_Bead_Small FB?
+U 1 1 5EB5D4ED
+P 9650 2950
+F 0 "FB?" V 9413 2950 50  0000 C CNN
+F 1 "600R" V 9504 2950 50  0000 C CNN
+F 2 "" V 9580 2950 50  0001 C CNN
+F 3 "~" H 9650 2950 50  0001 C CNN
+	1    9650 2950
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC

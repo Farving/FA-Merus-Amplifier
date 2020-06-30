@@ -1,0 +1,206 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J100
+U 1 1 5E96E044
+P 1800 3600
+F 0 "J100" H 1850 4125 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 1850 4126 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x10_P2.54mm_Horizontal" H 1800 3600 50  0001 C CNN
+F 3 "~" H 1800 3600 50  0001 C CNN
+	1    1800 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Library:Board_Module PCB100
+U 1 1 5E99695C
+P 5750 7000
+F 0 "PCB100" H 5792 7465 50  0000 C CNN
+F 1 "Board_Module" H 5792 7374 50  0000 C CNN
+F 2 "Library:PCB_Board_70x43" H 5750 7000 50  0001 C CNN
+F 3 "" H 5750 7000 50  0001 C CNN
+	1    5750 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR0106
+U 1 1 5E997C78
+P 6150 7200
+F 0 "#PWR0106" H 6150 6950 50  0001 C CNN
+F 1 "GNDA" H 6155 7027 50  0000 C CNN
+F 2 "" H 6150 7200 50  0001 C CNN
+F 3 "" H 6150 7200 50  0001 C CNN
+	1    6150 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5E998302
+P 5350 7200
+F 0 "#PWR0107" H 5350 6950 50  0001 C CNN
+F 1 "GND" H 5355 7027 50  0000 C CNN
+F 2 "" H 5350 7200 50  0001 C CNN
+F 3 "" H 5350 7200 50  0001 C CNN
+	1    5350 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7200 5350 7100
+Wire Wire Line
+	5350 6900 5450 6900
+Wire Wire Line
+	5450 7100 5350 7100
+Connection ~ 5350 7100
+Wire Wire Line
+	5350 7100 5350 6900
+Wire Wire Line
+	6050 6900 6150 6900
+Wire Wire Line
+	6150 6900 6150 7100
+Wire Wire Line
+	6050 7100 6150 7100
+Connection ~ 6150 7100
+Wire Wire Line
+	6150 7100 6150 7200
+$Comp
+L power:GND #PWR0108
+U 1 1 5E99C16B
+P 1400 4100
+F 0 "#PWR0108" H 1400 3850 50  0001 C CNN
+F 1 "GND" H 1405 3927 50  0000 C CNN
+F 2 "" H 1400 4100 50  0001 C CNN
+F 3 "" H 1400 4100 50  0001 C CNN
+	1    1400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 3700 1400 3700
+Wire Wire Line
+	1400 3700 1400 3800
+Wire Wire Line
+	1500 3800 1400 3800
+Connection ~ 1400 3800
+Wire Wire Line
+	1400 3800 1400 3900
+Wire Wire Line
+	1500 3900 1400 3900
+Connection ~ 1400 3900
+Wire Wire Line
+	1400 3900 1400 4000
+Wire Wire Line
+	1500 4000 1400 4000
+Connection ~ 1400 4000
+Wire Wire Line
+	1400 4000 1400 4100
+Wire Wire Line
+	1500 3200 1400 3200
+Wire Wire Line
+	1400 3200 1400 3700
+Connection ~ 1400 3700
+Wire Wire Line
+	1050 3300 1500 3300
+Wire Wire Line
+	1050 3400 1500 3400
+Wire Wire Line
+	1050 3500 1500 3500
+$Comp
+L power:+5V #PWR0109
+U 1 1 5E9A71FB
+P 1400 3000
+F 0 "#PWR0109" H 1400 2850 50  0001 C CNN
+F 1 "+5V" H 1415 3173 50  0000 C CNN
+F 2 "" H 1400 3000 50  0001 C CNN
+F 3 "" H 1400 3000 50  0001 C CNN
+	1    1400 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 5E9A77CE
+P 2100 3000
+F 0 "#PWR0110" H 2100 2850 50  0001 C CNN
+F 1 "+3.3V" H 2115 3173 50  0000 C CNN
+F 2 "" H 2100 3000 50  0001 C CNN
+F 3 "" H 2100 3000 50  0001 C CNN
+	1    2100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3000 2100 3100
+Wire Wire Line
+	2100 3100 2000 3100
+Wire Wire Line
+	1500 3100 1400 3100
+Wire Wire Line
+	1400 3100 1400 3000
+Text Label 1050 3300 0    50   ~ 0
+MUTE
+Text Label 1050 3400 0    50   ~ 0
+SPI_MOSI
+Text Label 1050 3500 0    50   ~ 0
+SPI_CS
+Text Label 2150 3300 0    50   ~ 0
+SHDN
+Text Label 2150 3400 0    50   ~ 0
+SPI_SCK
+Text Label 2150 3500 0    50   ~ 0
+SPI_MISO
+$Comp
+L power:GND #PWR0111
+U 1 1 5E9AEA5A
+P 2100 4100
+F 0 "#PWR0111" H 2100 3850 50  0001 C CNN
+F 1 "GND" H 2105 3927 50  0000 C CNN
+F 2 "" H 2100 4100 50  0001 C CNN
+F 3 "" H 2100 4100 50  0001 C CNN
+	1    2100 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 3200 2000 3200
+Text Label 2150 3800 0    50   ~ 0
+I2S_BCLK
+Text Label 2150 3900 0    50   ~ 0
+I2S_LRCLK
+Text Label 2150 4000 0    50   ~ 0
+I2S_MCLK
+Text Label 2150 3700 0    50   ~ 0
+I2S_SDI
+Wire Wire Line
+	3000 4000 3000 3250
+Wire Wire Line
+	3050 3900 3050 3350
+Wire Wire Line
+	3100 3800 3100 3450
+Wire Wire Line
+	3150 3700 3150 3550
+Wire Wire Line
+	2000 3400 2450 3400
+Wire Wire Line
+	2000 3500 2450 3500
+Wire Wire Line
+	2000 3900 3050 3900
+Wire Wire Line
+	2000 3800 3100 3800
+Wire Wire Line
+	2000 3700 3150 3700
+Wire Wire Line
+	2000 4000 3000 4000
+Wire Wire Line
+	2000 3300 2450 3300
+Wire Wire Line
+	2100 4100 2100 3200
+$EndSCHEMATC

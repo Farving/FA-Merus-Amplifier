@@ -1,0 +1,38 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:CP_Small C?
+U 1 1 5EAF33C3
+P 6500 1100
+F 0 "C?" H 6588 1146 50  0000 L CNN
+F 1 "470u" H 6588 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 6500 1100 50  0001 C CNN
+F 3 "~" H 6500 1100 50  0001 C CNN
+	1    6500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP_Small C?
+U 1 1 5EAF41A5
+P 7000 1100
+F 0 "C?" H 7088 1146 50  0000 L CNN
+F 1 "470u" H 7088 1055 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_16x17.5" H 7000 1100 50  0001 C CNN
+F 3 "~" H 7000 1100 50  0001 C CNN
+	1    7000 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
